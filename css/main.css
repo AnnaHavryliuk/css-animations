@@ -1,0 +1,261 @@
+body {
+	font: 16px Tahoma, Geneva, sans-serif;
+	line-height: 1.4;
+}
+
+pre {
+	font-family: "Courier New", Courier, monospace;
+}
+
+.checkout-button {
+	display: block;
+	padding: 16px 20px;
+	border: none;
+	border-radius: 10px;
+	margin: 15px;
+	margin-left: 27px;
+	font-size: 1.5em;
+	font-family: inherit;
+	font-weight: bold;
+	text-shadow: 0 0.75px 0.5px #fff;
+	background: linear-gradient(#e4e4e4, #e0e0e0, #aaa, #aeaeae);
+	box-shadow: 
+		0 0.75px 4px 1px #616161, 
+		0 0 0 8px #cbcbcb, 
+		0 0 0 10px #fff, 
+		0 0 0 12px #666;
+	cursor: pointer;
+}
+.button-text {
+	color: #555;
+	text-transform: uppercase;
+	margin: 0 13px;
+}
+
+.my-star {
+	color: #888;
+}
+.animation-container {
+	position: relative;
+	width: 1000px;
+	height: 890px;
+	margin: 20px auto;
+	background: url('../img/space.png') no-repeat;
+}
+.rhombus {
+	position: absolute;
+	top: 275px;
+	left: 400px;
+	width: 200px;
+	height: 200px;
+	background: linear-gradient(0deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	transform: scale(0.01);
+}
+.rhombus.top-position {
+	animation: gradient 4s linear infinite, top-transformation 3s linear forwards;
+}
+.rhombus.right-top-position {
+	animation: gradient 4s linear infinite, right-top-transformation 3s linear forwards;
+}
+.rhombus.right-bottom-position {
+	animation: gradient 4s linear infinite, right-bottom-transformation 3s linear forwards;
+}
+.rhombus.bottom-position {
+	animation: gradient 4s linear infinite, bottom-transformation 3s linear forwards;
+}
+.rhombus.left-bottom-position {
+	animation: gradient 4s linear infinite, left-bottom-transformation 3s linear forwards;
+}
+.rhombus.left-top-position {
+	animation: gradient 4s linear infinite, left-top-transformation 3s linear forwards;
+}
+.box {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	animation: rotate 10s 3.3s linear infinite;
+}
+@keyframes top-transformation {
+	0% {
+		transform: scale(0.01);
+	}
+	25% {
+		transform: scale(0.2);
+	}
+	50% {
+		transform: scale(0.5);
+	}
+	75% {
+		transform: scale(0.8);
+	}
+	100% {
+		transform: scale(1) rotate(45deg) skew(30deg, 30deg) translate(-68px, -68px);
+	}
+}
+@keyframes left-top-transformation {
+	0% {
+		transform: scale(0.01);
+	}
+	25% {
+		transform: scale(0.2);
+	}
+	50% {
+		transform: scale(0.5);
+	}
+	75% {
+		transform: scale(0.8);
+	}
+	100% {
+		transform: scale(1) rotate(170deg) skew(30deg, 30deg) translate(176px, -14px);
+	}
+}
+@keyframes left-bottom-transformation {
+	0% {
+		transform: scale(0.01);
+	}
+	25% {
+		transform: scale(0.2);
+	}
+	50% {
+		transform: scale(0.5);
+	}
+	75% {
+		transform: scale(0.8);
+	}
+	100% {
+		transform: scale(1) rotate(101deg) skew(30deg, 30deg) translate(211px, 22px);
+	}
+}
+@keyframes right-top-transformation {
+	0% {
+		transform: scale(0.01);
+	}
+	25% {
+		transform: scale(0.2);
+	}
+	50% {
+		transform: scale(0.5);
+	}
+	75% {
+		transform: scale(0.8);
+	}
+	100% {
+		transform: scale(1) rotate(101deg) skew(30deg, 30deg)  translate(12px, -177px);
+	}
+}
+@keyframes right-bottom-transformation {
+	0% {
+		transform: scale(0.01);
+	}
+	25% {
+		transform: scale(0.2);
+	}
+	50% {
+		transform: scale(0.5);
+	}
+	75% {
+		transform: scale(0.8);
+	}
+	100% {
+		transform: scale(1) rotate(170deg) skew(30deg, 30deg) translate(-23px, -210px);
+	}
+}
+@keyframes bottom-transformation {
+	0% {
+		transform: scale(0.01);
+	}
+	25% {
+		transform: scale(0.2);
+	}
+	50% {
+		transform: scale(0.5);
+	}
+	75% {
+		transform: scale(0.8);
+	}
+	100% {
+		transform: scale(1) rotate(45deg) skew(30deg, 30deg) translate(130px, 130px);
+	}
+}
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(90deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	75% {
+		transform: rotate(270deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes gradient {
+	0% {
+		background: linear-gradient(0deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	}
+	5% {
+		background: linear-gradient(18deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	}
+	10% {
+		background: linear-gradient(36deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	}
+	15% {
+		background: linear-gradient(54deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	}
+	20% {
+		background: linear-gradient(72deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	}
+	25% {
+		background: linear-gradient(90deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	}
+	30% {
+		background: linear-gradient(108deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	}
+	35% {
+		background: linear-gradient(126deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	}
+	40% {
+		background: linear-gradient(144deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	}
+	45% {
+		background: linear-gradient(162deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	}
+	50% {
+		background: linear-gradient(180deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	}
+	55% {
+		background: linear-gradient(198deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	}
+	60% {
+		background: linear-gradient(216deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	}
+	65% {
+		background: linear-gradient(234deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	}
+	70% {
+		background: linear-gradient(252deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	}
+	75% {
+		background: linear-gradient(270deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	}
+	80% {
+		background: linear-gradient(288deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	}
+	85% {
+		background: linear-gradient(306deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	}
+	90% {
+		background: linear-gradient(324deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	}
+	95% {
+		background: linear-gradient(342deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	}
+	100% {
+		background: linear-gradient(360deg, #c2b93b, #28120f, #16b499, #28120f, #c2b93b);
+	}
+}
